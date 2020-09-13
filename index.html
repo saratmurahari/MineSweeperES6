@@ -1,0 +1,47 @@
+<!doctype>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link href="css/app.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header id="header">
+       <div class="title">Mine Sweeper</div>
+       <div class="userLogin">
+          <input type="text" id="userName" placeholder="User Name">
+          <button id="submit">Submit</button>
+       </div>
+  </header>
+  <main id="mainContent">
+      <h3 id="welcomeNote">Please Login</h3>
+      <div id="gameLevelBlock">
+          <div id="gameLevelWrapper">
+            <input type="number" id='gameLevel' placeholder="Enter level" />
+            <button id="newGame">Start New Game</button>
+          </div>
+          
+          <p class="info">Max level is 10 (Enter a value between 1 to 10)</p>
+
+      </div>
+    
+      <ul id="gameGrid">
+          
+      </ul>
+      <div id='matchResult'></div>
+      <div id="userResults">
+        <button id="showUserResults">Show My results</button>
+        <ul id="userResultList">
+          
+        </ul>
+      </div>
+  </main>
+  <script src="js/gameController.js" defer type="text/javascript"></script>
+  <script src="js/gameTemplate.js" defer type="text/javascript"></script>
+  <script src="js/gameStore.js" defer type="text/javascript"></script>
+  <script src="js/app.js" defer type="text/javascript"></script>
+
+</body>
+
+</html>

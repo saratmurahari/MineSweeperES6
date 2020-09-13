@@ -1,0 +1,120 @@
+  body {
+    font-family: sans-serif;
+    margin: 0 auto;
+    color:#000;
+    font-weight: 400;
+  }
+ 
+  #header{
+    background: gray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 10px 40px;
+    margin-bottom: 50px;
+  }
+  #mainContent{
+    display: flex;
+    width: 80%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  #welcomeNote{
+    font-weight: 400;
+  }
+  #gameLevelBlock{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #gameLevelWrapper{
+    margin-bottom: 20px;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  }
+
+  .info{
+    margin: 5px 0;
+    font-size: 11px;
+  }
+  #gameLevel{
+    padding: 5px;
+    width: 90px;
+  }
+  #newGame{
+    padding: 5px;
+  }
+  .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  #gameGrid{
+    flex-direction: column;
+    display: flex;
+    margin: 30px 0;
+    padding: 0;
+    border: 1px solid black;
+  }
+
+  .column{
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background: #e8dfdf;
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid;
+    position: relative;
+  }
+  .wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background: gray;
+  }
+  .row .column:last-child{
+    border-right: 0;
+
+  }
+  .redDot{
+    border-radius: 15px;
+    width: 15px;
+    height: 15px;
+    background: red;
+  }
+  #gameGrid .row:last-child .column{
+    border-bottom:0;
+  }
+  #userResults{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px
+  }
+  #userResultList{
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  #userResultList .row .column{
+   width: 200px;
+  }
+  #userResultList .row{
+    width: auto;
+  }
