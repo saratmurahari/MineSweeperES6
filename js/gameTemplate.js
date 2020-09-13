@@ -132,11 +132,13 @@
             else{
                 this.totalGrid--;
                 if(this.mineCount===this.totalGrid){
-                    games[games.length-1].won=1;
-                    data.userData[loggedinUser].games[games.length-1].gameOver=true;
-                    this.store.setData(data);
-                    alert('You Won!');
-                    this.matchResult.innerHTML='You Won!';
+                    if(games[games.length-1].gameOver!==true){
+                        games[games.length-1].won=1;
+                        data.userData[loggedinUser].games[games.length-1].gameOver=true;
+                        this.store.setData(data);
+                        alert('You Won!');
+                        this.matchResult.innerHTML='You Won!';
+                    }
                 }
                 
             }
