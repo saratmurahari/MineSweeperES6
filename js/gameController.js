@@ -83,9 +83,6 @@
                 target.style.display='none';
                 this.template.checkMine(row,column);
             }
-            else {
-                return;
-            }
             
         }
         bindEvents(){  
